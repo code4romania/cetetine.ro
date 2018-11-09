@@ -20,6 +20,7 @@ deploy:
   - provider: s3
     bucket: $S3_BUCKET_NAME
     region: $S3_BUCKET_REGION
+    upload-dir: public
     skip_cleanup: true
     acl: public_read
     on:
