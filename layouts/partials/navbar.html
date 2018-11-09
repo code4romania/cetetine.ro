@@ -1,0 +1,28 @@
+<nav class="navbar is-black">
+	<div class="container">
+		<div class="navbar-brand">
+			<a class="navbar-item brand is-flex" href="{{ "/" | relURL }}">
+				<img src="{{ "images/code4romania-full-gray.svg" | relURL }}" class="logo svg-fallback" alt="{{ $.Site.Params.By }}">
+			</a>
+			<a role="button" class="navbar-burger" data-target="header-menu" aria-label="menu" aria-expanded="false">
+				<span aria-hidden="true"></span>
+				<span aria-hidden="true"></span>
+				<span aria-hidden="true"></span>
+			</a>
+		</div>
+		<div id="header-menu" class="navbar-menu">
+			<div class="navbar-end has-text-centered-touch">
+				{{- range .Site.Menus.header -}}
+					<a class="navbar-item" target="_blank" href="{{ .URL }}">
+						{{- with .Pre -}}
+							<span class="icon is-medium">
+								<i class="{{ . }}" aria-hidden="true"></i>
+							</span>
+						{{- end -}}
+						<span>{{ .Name }}</span>
+					</a>
+				{{- end -}}
+			</div>
+		</div>
+	</div>
+</nav>

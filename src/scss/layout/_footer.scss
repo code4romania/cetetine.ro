@@ -1,0 +1,38 @@
+.footer {
+	border-top: 2px solid $primary;
+	font-size: .875rem;
+	margin-top: 3rem;
+
+	.social {
+		font-size: 1.25rem;
+		margin: 1rem 0 0;
+		display: block;
+
+		.icon {
+			margin: 0 .325rem;
+			color: $grey-light;
+
+			&:first-child {
+				margin-left: 0;
+			}
+
+			&:hover {
+				color: $link;
+			}
+		}
+	}
+
+	.copy {
+		font-family: $family-monospace;
+
+		.brand {
+			display: inline-block;
+			margin: 1rem 0;
+		}
+
+		.logo {
+			width: 6.7125rem;
+			height: 1.875rem;
+		}
+	}
+}

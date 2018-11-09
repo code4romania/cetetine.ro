@@ -1,0 +1,19 @@
+<footer class="footer">
+	<div class="container">
+		<div class="columns is-centered">
+			<div class="column is-6 copy has-text-centered">
+				<a href="{{ .Site.Params.url }}" class="brand">
+					<img src="{{ "images/code4romania-full-gray.svg" | relURL }}" class="logo svg-fallback" alt="{{ .Site.Params.by }}">
+				</a>
+				<p>{{ .Site.Params.copy }}</p>
+				<div class="social">
+					{{- range .Site.Menus.social -}}
+						<a href="{{ .URL }}" class="icon" target="_blank">
+							<i class="fab fa-fw fa-{{ .Name }}" aria-hidden="true"></i>
+						</a>
+					{{- end -}}
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>

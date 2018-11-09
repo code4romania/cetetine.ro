@@ -1,0 +1,20 @@
+{{- define "main" -}}
+	<section class="hero is-black is-fullheight is-large">
+		<div class="hero-head">
+			{{- partial "navbar.html" . -}}
+		</div>
+		<div class="hero-body">
+			<div class="container has-text-centered">
+				<h1 class="title is-size-1">Te-ai pierdut?</h1>
+
+				<div class="buttons is-centered">
+					<a href="https://code4.ro/ro/cine-suntem/" class="button is-primary is-inverted is-large">Află cine suntem</a>
+					<a href="https://code4.ro/ro/implica-te/" class="button is-primary is-inverted is-large">Vrei să te implici?</a>
+				</div>
+			</div>
+		</div>
+		<div class="hero-foot">
+			{{- partial "footer.html" . -}}
+		</div>
+	</section>
+{{- end -}}

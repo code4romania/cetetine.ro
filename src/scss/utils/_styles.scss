@@ -1,0 +1,37 @@
+// Fonts
+$family-sans-serif             : 'Open Sans', 'Arial', sans-serif;
+$family-monospace              : Courier, monospace;
+$fa-font-path                  : 'fonts';
+
+// Colors
+$black                         : #1A1A1A;
+$yellow                        : #FFEA4E;
+$red                           : #EA4C52;
+$green                         : #149D38;
+
+$primary                       : $yellow;
+$primary-invert                : $black;
+
+$footer-background-color       : $black;
+
+
+// Forms
+$label-color                   : #C5C3BE;
+$input-background-color        : #242424;
+$input-arrow                   : #FFF;
+$input-color                   : #FFF;
+$input-border-color            : none;
+$input-hover-color             : none;
+$input-hover-border-color      : lighten($input-background-color, 5%);
+$input-focus-border-color      : lighten($input-background-color, 20%);
+$input-focus-box-shadow-color  : $yellow;
+$input-focus-box-shadow-size   : 0 0 0 .025em;
+
+
+// Navbar
+$navbar-height                 : 5rem;
+$navbar-item-img-max-height    : 2.5rem;
+
+// Other
+$variable-columns              : false;
+$dimensions                    : 16 24 32 48 64 96 128 192;

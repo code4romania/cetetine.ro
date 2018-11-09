@@ -1,0 +1,37 @@
+<form action="{{ .action }}" method="{{ .method }}">
+	<input type="hidden" name="_redirect" value="true">
+	{{- range .fields -}}
+		<div class="field">
+			{{- if eq .type "submit" -}}
+				<input name="submit" type="submit" value="{{ .label }}" class="button is-medium is-primary is-outlined">
+			{{- else -}}
+				{{- if .required -}}
+					{{- .Scratch.Set "attrs" (print "required" | safeHTMLAttr) -}}
+				{{- else -}}
+					{{- .Scratch.Set "attrs" "" -}}
+				{{- end -}}
+				<label class="label is-medium">{{ .label }}</label>
+				<div class="control">
+					{{- if eq .type "textarea" -}}
+						<textarea name="{{ .name }}" rows="10" class="textarea is-medium has-fixed-size"
+							{{- with .required }} required {{- end }}></textarea>
+					{{- else if eq .type "select" -}}
+						<div class="select is-medium is-fullwidth">
+							<select name="{{ .name }}" {{- with .required }} required {{- end }}>
+								<option></option>
+								{{- range .options -}}
+									<option>{{ . }}</option>
+								{{- end -}}
+							</select>
+						</div>
+					{{- else -}}
+						<input name="{{ .name }}" class="input is-medium" type="{{ .type }}"
+							{{- with .required }} required {{- end }}>
+					{{- end -}}
+					<p class="help"></p>
+				</div>
+			{{- end -}}
+		</div>
+	{{- end -}}
+	<div class="field" id="messages"></div>
+</form>

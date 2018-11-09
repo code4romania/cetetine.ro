@@ -1,0 +1,28 @@
+{{- define "main" -}}
+	<section class="hero is-black">
+		<div class="hero-head">
+			{{- partial "navbar.html" . -}}
+		</div>
+		<div class="hero-body">
+			<div class="container">
+				<div class="columns is-centered">
+					<div class="column is-9-tablet is-8-desktop is-7-fullhd">
+						<div class="content is-medium">
+							<figure class="has-text-centered">
+								<img src="{{ "images/logo.svg" | relURL }}" class="svg-fallback" alt="{{ .Title }}">
+							</figure>
+							{{- .Content -}}
+						</div>
+
+						{{- with (getJSON "function/form.json") -}}
+							{{- partial "form.html" . -}}
+						{{- end -}}
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="hero-foot">
+			{{- partial "footer.html" . -}}
+		</div>
+	</section>
+{{- end -}}

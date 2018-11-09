@@ -1,0 +1,95 @@
+{
+	"action": "https://api.cetetine.ro/submit",
+	"method": "post",
+	"fields": [
+		{
+			"name": "name",
+			"type": "text",
+			"label": "Nume",
+			"required": true
+		},
+		{
+			"name": "email",
+			"type": "email",
+			"label": "Email",
+			"required": true
+		},
+		{
+			"name": "county",
+			"type": "select",
+			"label": "Județ",
+			"required": true,
+			"options": [
+				"Alba",
+				"Arad",
+				"Argeș",
+				"Bacău",
+				"Bihor",
+				"Bistrița-Năsăud",
+				"Botoșani",
+				"Brașov",
+				"Brăila",
+				"București",
+				"Buzău",
+				"Caraș-Severin",
+				"Cluj",
+				"Constanța",
+				"Covasna",
+				"Călărași",
+				"Dolj",
+				"Dâmbovița",
+				"Galați",
+				"Giurgiu",
+				"Gorj",
+				"Harghita",
+				"Hunedoara",
+				"Ialomița",
+				"Iași",
+				"Ilfov",
+				"Maramureș",
+				"Mehedinți",
+				"Mureș",
+				"Neamț",
+				"Olt",
+				"Prahova",
+				"Satu Mare",
+				"Sibiu",
+				"Suceava",
+				"Sălaj",
+				"Teleorman",
+				"Timiș",
+				"Tulcea",
+				"Vaslui",
+				"Vâlcea"
+			]
+		},
+		{
+			"name": "field",
+			"type": "select",
+			"label": "Din ce domeniu face parte problema pe care vrei să o semnalezi?",
+			"required": true,
+			"options": [
+				"Cultură și artă",
+				"Diaspora",
+				"Ecologie",
+				"Educație",
+				"Sănătate",
+				"Justiție",
+				"Jurnalism",
+				"Dezvoltare rurală",
+				"Transparență & Open Data",
+				"Grupuri vulnerabile & incluziune socială"
+			]
+		},
+		{
+			"name": "message",
+			"type": "textarea",
+			"label": "Detaliază problema aici",
+			"required": true
+		},
+		{
+			"type": "submit",
+			"label": "Trimite"
+		}
+	]
+}
