@@ -26,11 +26,12 @@ deploy:
     on:
       branch: master
   - provider: lambda
-    function_name: $LAMBDA_FUNC_NAME
-    region: $LAMBDA_FUNC_REGION
+    function_name: $AWS_LAMBDA_NAME
+    region: $AWS_LAMBDA_REGION
+    role: $AWS_LAMBDA_ROLE
     runtime: nodejs8.10
     handler_name: handler
-    zip: ${TRAVIS_BUILD_DIR}/function
+    zip: function
     skip_cleanup: true
     on:
       branch: master
