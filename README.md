@@ -1,4 +1,6 @@
-# Ce te tine treaz noaptea? (What Keeps You Up at Night?)
+# Ce te ține treaz noaptea?
+
+_What keeps you up at night?_
 
 [![Build Status](https://img.shields.io/travis/com/code4romania/cetetine.ro/master.svg?style=for-the-badge)](https://travis-ci.com/code4romania/cetetine.ro) [![GitHub contributors](https://img.shields.io/github/contributors/code4romania/cetetine.ro.svg?style=for-the-badge)](https://github.com/code4romania/cetetine.ro/graphs/contributors) [![GitHub last commit](https://img.shields.io/github/last-commit/code4romania/cetetine.ro.svg?style=for-the-badge)](https://github.com/code4romania/cetetine.ro/commits/master) [![License: MPL 2.0](https://img.shields.io/badge/license-MPL%202.0-brightgreen.svg?style=for-the-badge)](https://opensource.org/licenses/MPL-2.0)
 
