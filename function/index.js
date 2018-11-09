@@ -62,11 +62,7 @@ function generateEmailParams(body) {
 		text = '';
 
 	for (var key in data) {
-		if (key == 'message') {
-			text+= `\n${data[key].label}:\n${data[key].value}\n`
-		} else {
-			text+= `${data[key].label}: ${data[key].value}\n`
-		}
+		text+= `${data[key].label}:\n${data[key].value}\n\n`
 	}
 
 	return {
