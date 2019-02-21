@@ -13,7 +13,7 @@
 		<div id="header-menu" class="navbar-menu">
 			<div class="navbar-end has-text-centered-touch">
 				{{- range .Site.Menus.header -}}
-					<a class="navbar-item" target="_blank" href="{{ .URL }}">
+					<a class="navbar-item" {{- if (ne .URL "#") }} target="_blank" {{- end }} href="{{ .URL }}">
 						{{- with .Pre -}}
 							<span class="icon is-medium">
 								<i class="{{ . }}" aria-hidden="true"></i>
