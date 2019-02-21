@@ -13,9 +13,9 @@ staticDir:
 
 menu:
   header:
-    - name: Despre Code for Romania
+    - name: Despre Civic Lab
       pre: fa fa-code
-      url: https://code4.ro/ro/
+      url: "#"
     - name: Donează
       pre: fab fa-paypal
       url: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=U4QBTHU9J5HUS

@@ -5,7 +5,8 @@ const aws       = require('aws-sdk'),
 	corsDomain  = process.env.CORS_DOMAIN,
 	emailFrom   = process.env.EMAIL_FROM,
 	emailTo     = process.env.EMAIL_TO.split(','),
-	form        = require('./form.json');
+	form        = require('./form.json'),
+	map         = require('./map.json');
 
 function response(statusCode, payload, redirect = false) {
 	let headers = {
