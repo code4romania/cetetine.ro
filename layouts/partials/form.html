@@ -10,13 +10,13 @@
 				{{- else -}}
 					{{- .Scratch.Set "attrs" "" -}}
 				{{- end -}}
-				<label class="label is-medium">{{ .label }}</label>
+				<label class="label">{{ .label }}</label>
 				<div class="control">
 					{{- if eq .type "textarea" -}}
-						<textarea name="{{ .name }}" rows="10" class="textarea is-medium has-fixed-size"
+						<textarea name="{{ .name }}" rows="10" class="textarea has-fixed-size"
 							{{- with .required }} required {{- end }}></textarea>
 					{{- else if eq .type "select" -}}
-						<div class="select is-medium is-fullwidth">
+						<div class="select is-fullwidth">
 							<select name="{{ .name }}" {{- with .required }} required {{- end }}>
 								<option></option>
 								{{- range .options -}}
@@ -25,7 +25,7 @@
 							</select>
 						</div>
 					{{- else -}}
-						<input name="{{ .name }}" class="input is-medium" type="{{ .type }}"
+						<input name="{{ .name }}" class="input" type="{{ .type }}"
 							{{- with .required }} required {{- end }}>
 					{{- end -}}
 					<p class="help"></p>

@@ -5,8 +5,7 @@ const aws       = require('aws-sdk'),
 	corsDomain  = process.env.CORS_DOMAIN,
 	emailFrom   = process.env.EMAIL_FROM,
 	emailTo     = process.env.EMAIL_TO.split(','),
-	form        = require('./form.json'),
-	map         = require('./map.json');
+	form        = require('./form.json');
 
 function response(statusCode, payload, redirect = false) {
 	let headers = {
@@ -93,8 +92,8 @@ exports.handler = async (event) => {
 	try {
 		let body = querystring.parse(event.body);
 
-		const emailParams = generateEmailParams(body)
-		const data = await ses.sendEmail(emailParams).promise()
+		const emailParams = generateEmailParams(body);
+		const data = await ses.sendEmail(emailParams).promise();
 
 		return response(200, data, !!body['_redirect']);
 	} catch (err) {
