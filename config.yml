@@ -15,10 +15,10 @@ menu:
   header:
     - name: Despre Civic Lab
       pre: fa fa-code
-      url: "#"
+      url: http://civiclab.ro/
     - name: Donează
       pre: fab fa-paypal
-      url: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=U4QBTHU9J5HUS
+      url: https://code4.ro/ro/doneaza/
   social:
     - name: facebook
       url: https://www.facebook.com/code4romania/
