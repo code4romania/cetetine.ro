@@ -26,8 +26,12 @@
 			"label": "Din ce domeniu face parte problema pe care dorești să ne-o semnalezi?",
 			"required": true,
 			"options": [
-				"Resurse umane în educație",
-				"Sănătatea mamei și a copilului"
+				"Sănătatea mamei și a copilului",
+				"Resursele umane în educație",
+				"Alegeri",
+				"Pregătire și răspuns în situații de urgență",
+				"Organizare comunitară",
+				"Acces la legislație"
 			]
 		},
 		{
