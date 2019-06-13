@@ -37,7 +37,7 @@ blackfriday:
   hrefTargetBlank: true
   fractions: false
 
-googleAnalytics:
+googleAnalytics: UA-142069348-1
 privacy:
   googleAnalytics:
     anonymizeIP: true
