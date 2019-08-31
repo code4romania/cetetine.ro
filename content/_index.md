@@ -2,7 +2,7 @@
 title: Ce te ține treaz noaptea
 ---
 
-Programul Civic Lab al Code for Romania, susținut de Fundația Vodafone România, este un program de cercetare și incubare de soluții la nivel național pe 10 mari domenii de interes, relevante pentru România. În cadrul programului identificăm punctele nevralgice ale sistemelor din România, în mod colaborativ, prin consultarea tuturor actorilor relevanți din fiecare domeniu în procesul de cercetare și analizare a datelor existente.
+Programul Civic Labs al Code for Romania, susținut de Fundația Vodafone România, este un program de cercetare și incubare de soluții la nivel național pe 10 mari domenii de interes, relevante pentru România. În cadrul programului identificăm punctele nevralgice ale sistemelor din România, în mod colaborativ, prin consultarea tuturor actorilor relevanți din fiecare domeniu în procesul de cercetare și analizare a datelor existente.
 
 Odată validate aceste probleme, echipa de specialiști a Code for Romania identifică soluțiile tehnice care pot veni în sprijinul rezolvării sau remedierii unora dintre acestea. Acestea sunt definite, prototipate, documentate și testate cu utilizatorii și beneficiarii direcți, urmând ca apoi să fie făcute disponibile spre a fi dezvoltate de echipe tehnice.
 
