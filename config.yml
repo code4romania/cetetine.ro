@@ -15,7 +15,7 @@ menu:
   header:
     - name: Despre Civic Labs
       pre: fa fa-code
-      url: http://civiclabs.ro/
+      url: https://civiclabs.ro/
     - name: Donează
       pre: fab fa-paypal
       url: https://code4.ro/ro/doneaza/
