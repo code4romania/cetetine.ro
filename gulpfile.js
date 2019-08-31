@@ -9,10 +9,7 @@ const gulp       = require('gulp'),
 	eslint       = require('gulp-eslint'),
 	merge        = require('merge-stream'),
 	modernizr    = require('gulp-modernizr'),
-	pngquant     = require('gulp-pngquant'),
 	postcss      = require('gulp-postcss'),
-	raster       = require('gulp-raster'),
-	rename       = require('gulp-rename'),
 	sass         = require('gulp-sass'),
 	sassLint     = require('gulp-sass-lint'),
 	sourcemaps   = require('gulp-sourcemaps'),
@@ -42,7 +39,6 @@ function css() {
 		}))
 		.pipe(postcss([
 			autoprefixer({
-				browsers: ['last 2 versions'],
 				cascade: false
 			}),
 		]))
@@ -115,8 +111,8 @@ function fonts() {
 }
 
 // SVG
-svg = gulp.series(svgo, svg2png);
-svg.description = 'Minify .svg files, then rasterize and optimize them';
+svg = gulp.series(svgo);
+svg.description = 'Minify .svg files';
 
 function svgo() {
 	return gulp.src(path.join(pkg.srcDir, 'svg', '/**/*.svg'))
@@ -127,21 +123,6 @@ function svgo() {
 				{ removeUselessStrokeAndFill: true },
 				{ cleanupIDs: false },
 			],
-		}))
-		.pipe(gulp.dest( path.join(pkg.buildDir, pkg.assetsDir, 'images') ));
-}
-
-function svg2png() {
-	return gulp.src(path.join(pkg.srcDir, 'svg', '/**/*.svg'))
-		.pipe(raster({
-			format: 'png',
-			scale: 1,
-		}))
-		.pipe(rename({
-			extname: '.png',
-		}))
-		.pipe(pngquant({
-			quality: '65-80',
 		}))
 		.pipe(gulp.dest( path.join(pkg.buildDir, pkg.assetsDir, 'images') ));
 }
