@@ -4,7 +4,7 @@ languageCode: ro
 params:
   by: Code for Romania
   url: https://code4.ro/ro/
-  copy: Civic Lab este un program desfășurat de Code for Romania prin care ne dorim diagnosticarea problemelor românilor din țară și de pretutindeni pentru a putea identifica soluții sustenabile și eficiente.
+  copy: Civic Labs este un program desfășurat de Code for Romania prin care ne dorim diagnosticarea problemelor românilor din țară și de pretutindeni pentru a putea identifica soluții sustenabile și eficiente.
   description: Vrem să știm ce te frământă, cu ce probleme te confrunți, ce ai vrea să meargă mai bine în țară. Semnalează-ne o problemă pe care ai identificat-o, iar noi vom încerca să o analizăm, cercetăm, validăm și apoi să îi găsim soluție.
 
 staticDir:
@@ -13,9 +13,9 @@ staticDir:
 
 menu:
   header:
-    - name: Despre Civic Lab
+    - name: Despre Civic Labs
       pre: fa fa-code
-      url: http://civiclab.ro/
+      url: http://civiclabs.ro/
     - name: Donează
       pre: fab fa-paypal
       url: https://code4.ro/ro/doneaza/
